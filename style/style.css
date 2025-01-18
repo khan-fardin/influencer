@@ -70,3 +70,28 @@ nav > div > ul > li > a > img{
     background-image: url(../images/Circle\ design.svg);
 }
 
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    nav{
+        display: block;
+        align-items: center;
+    }
+    nav ul{
+        display:none;
+    }
+    .banner{
+        text-align: center;
+        flex-direction: column-reverse;
+        width: fit-content;
+        justify-content: center;
+        margin: auto;
+    }
+}

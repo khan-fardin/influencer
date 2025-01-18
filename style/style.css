@@ -1,0 +1,72 @@
+
+.poppins {
+    font-family: "Poppins", serif;
+    font-style: normal;
+  }
+
+/* //////////nav bar///////// */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 120px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+nav > h1{
+    font-size: 24px; font-weight: bold;
+    color: #3A3A3A;
+}
+nav > div > ul > li {
+    list-style: none;
+}
+nav > div > ul > li > a{
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 1rem; font-weight: 600;
+}
+nav > div > ul > li > a:hover{color: #E02C6D;}
+
+nav > div > ul > li > a > img{
+    width: 30px;
+    height: 30px;
+}
+
+/* //////////////banner//////////////// */
+.banner{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px 120px;
+}
+.banner-text{
+    width: 582px;
+}
+.banner h1{
+    font-size: 3.25rem; font-weight: bold;
+    color: #3A3A3A;
+    margin: 0px;
+}
+.banner p{
+    font-size: 1rem; font-weight:600;
+    color: #3A3A3A;
+}
+.banner button{
+    font-size: 1rem; font-weight: bold;
+    color: #FFFFFF;
+    background-color: #E02C6D;
+    width: 196px; height: 44px;
+    border: none; 
+    border-radius: 41%;
+}
+.banner button img{width: 24px; height: 24px;}
+.right-arrow{
+    width: 24px; height: 24px;
+}
+.banner-img img{
+    background-image: url(../images/Circle\ design.svg);
+}
+

@@ -62,6 +62,12 @@ nav > div > ul > li > a > img{
     width: 196px; height: 44px;
     border: none; 
     border-radius: 41%;
+    padding: 10px 24px;
+}
+.banner button span{
+        margin-left: 8px; /* Adds spacing between the text and icon */
+        font-size: 16px; /* Scales the icon size */
+        transition: transform 0.3s ease; /* Adds smooth animation */
 }
 .banner button img{width: 24px; height: 24px;}
 .right-arrow{
@@ -104,6 +110,9 @@ nav > div > ul > li > a > img{
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
     max-width: 300px;
 }
+.col-item:hover{        /*item hover*/
+    padding: 20px;
+}
 .item-img{
     width: 300px; height: 256px;
     border-radius: 5%;
@@ -132,15 +141,52 @@ nav > div > ul > li > a > img{
 .collection-more{
     display: flex;
     justify-content: end;
+    margin: 10px auto;
 }
 .collection-more h6{
     font-size: 1rem; font-weight: bold;
     color: rgba(224, 44, 109, 0.87);
 }
-
-
-
-
+.collection-more h6 span{
+    color: #E02C6D;
+}
+.collection-more h6:hover{      /*see more hover*/
+    font-size: 1.1rem;
+}
+/* ///////////featured section/////////////// */
+.featured{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6.67%;
+    margin: 0 120px;
+}
+.featured img{
+    border-radius: 7px;
+    width: 404px;
+}
+.feature-text h3{
+    font-size: 2.375rem; font-weight: bold;
+    color: #0A0826;
+    margin: 0;
+}
+.feature-text p{
+    font-size: 1rem; font-weight: bold;
+    color: #6C6C6C;
+}
+.feature-text button{
+    font-size: 1rem; font-weight: bold;
+    color: white;
+    background-color: #E02C6D;
+    border: 0;
+    width: 155px; height: 44px;
+}
+.feature-text button:hover{
+    width: 200px;
+}
+.feature-text button span{
+    width: 24px;
+}
 
 @media screen and (max-width:576px) {
     nav{
@@ -207,6 +253,15 @@ nav > div > ul > li > a > img{
     .collection-items{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    /* feature section */
+    .featured{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-items: center;
+        margin: 0 20px;
+        text-align: center;
         gap: 30px;
     }
 }
